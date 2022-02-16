@@ -208,3 +208,15 @@ body{
 
 .verde{background-color: green; color: white;}
 .rojo{background-color: red; color:white;}
+
+.contenedorFooter{
+    a{
+        display: flex;
+        justify-content: center;
+    }
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    }
+
