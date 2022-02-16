@@ -130,6 +130,14 @@ body {
   border: white 3px solid;
 }
 
+.carousel-control-prev-icon {
+  margin-right: 25px;
+}
+
+.carousel-control-next-icon {
+  margin-left: 25px;
+}
+
 .quienes_somos_contenedor, .nuestros_clientes_contenedor {
   font-family: "Bebas Neue", cursive;
   width: 100%;

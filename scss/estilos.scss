@@ -15,6 +15,7 @@ $gris: rgb(224, 215, 215);
 $unpixel:1;
 
 
+
 // index y generales colores, y fuentes
 
 
@@ -173,8 +174,14 @@ body{
         border-radius: 5%;
         border: white 3px solid;
     }
+}
 
+.carousel-control-prev-icon{
+    margin-right: 25px;
+}
 
+.carousel-control-next-icon{
+    margin-left: 25px;
 }
 // fin galeriadefotos.html
 
