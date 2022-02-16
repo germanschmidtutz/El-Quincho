@@ -28,18 +28,20 @@ body {
 }
 
 .texto_subtitulo {
-  color: #df7803;
+  color: #df8703;
   font-family: "Bebas Neue", cursive;
   font-size: 3rem;
 }
 
 .fondo_contenedorImg {
   background-color: rgba(255, 255, 255, 0.3);
+  width: 70%;
 }
 .fondo_contenedorImg img {
   margin-top: 2rem;
   border-radius: 10%;
   transition: transform 0.5s;
+  height: 50%;
 }
 .fondo_contenedorImg img:hover {
   transform: scale(1.05);
@@ -47,11 +49,11 @@ body {
 }
 
 #ult_foto {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .h4_texto {
-  color: #df7803;
+  color: #df8703;
   font-family: "Bebas Neue", cursive;
   font-size: 2.1rem;
   color: #e0d7d7;
@@ -59,7 +61,7 @@ body {
 }
 
 .titulo_paginas, .quienes_somos_contenedor, .nuestros_clientes_contenedor {
-  color: #df7803;
+  color: #df8703;
   font-family: "Bebas Neue", cursive;
   font-size: 3rem;
   color: white;

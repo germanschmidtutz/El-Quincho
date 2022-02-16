@@ -1,7 +1,7 @@
 $amarillo: rgb(235, 200, 45);
 $negro: black;
 $blanco: rgb(255, 255, 255);
-$amarillo2: rgb(223, 120, 3);
+$amarillo2: rgb(223, 135, 3);
 $gris: rgb(224, 215, 215);
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -53,11 +53,15 @@ body{
 
 .fondo_contenedorImg{
     background-color: rgb(255, 255, 255, 0.3);
+    width: 70%;
+
 
     img{
         margin-top: 2rem;
         border-radius: 10%;
         transition: transform 0.5s;
+        height: 50%;
+
     }
     img:hover{
         transform: scale(1.05);
@@ -65,8 +69,10 @@ body{
     }
 }
 
+
+
 #ult_foto{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .h4_texto{
@@ -220,4 +226,3 @@ body{
     flex-direction: row;
     margin-top: 10px;
     }
-
