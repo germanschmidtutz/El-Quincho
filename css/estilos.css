@@ -36,6 +36,7 @@ body {
 .fondo_contenedorImg {
   background-color: rgba(255, 255, 255, 0.3);
   width: 70%;
+  height: 100%;
 }
 .fondo_contenedorImg img {
   margin-top: 2rem;
