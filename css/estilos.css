@@ -130,8 +130,9 @@ body {
 
 .quienes_somos_contenedor, .nuestros_clientes_contenedor {
   font-family: "Bebas Neue", cursive;
-  width: 50%;
+  width: 100%;
   text-align: center;
+  padding: 5rem;
   font-size: 33.3333333333px;
   margin-top: 50px;
   color: black;

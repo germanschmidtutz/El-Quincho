@@ -179,8 +179,9 @@ body{
     font-family: 'Bebas Neue', cursive;
     @extend .titulo_paginas;
     $var1: 100%;
-    width: $var1/2;
+    width: $var1;
     text-align: center;
+    padding: 5rem;
     $fontbig: 50px;
     font-size: $fontbig/1.5;
     margin-top: $unpixel*50px;
