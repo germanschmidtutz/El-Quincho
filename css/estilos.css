@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header_colores {
+  background-color: black !important;
+  font-family: "Bebas Neue", cursive;
+  display: flex;
+  justify-content: end;
+  font-size: 1.3rem;
+}
+.header_colores .nav-link {
+  color: white !important;
+}
+
+body {
+  background-color: #ebc82d;
+}
+
+.titulo_principal {
+  margin-top: 1rem;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+}
+
+.texto_subtitulo {
+  color: #df7803;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+}
+
+.fondo_contenedorImg {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.fondo_contenedorImg img {
+  margin-top: 2rem;
+  border-radius: 10%;
+  transition: transform 0.5s;
+}
+.fondo_contenedorImg img:hover {
+  transform: scale(1.05);
+  transition-delay: 0.1s;
+}
+
+#ult_foto {
+  margin-bottom: 1rem;
+}
+
+.h4_texto {
+  color: #df7803;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.1rem;
+  color: #e0d7d7;
+  text-shadow: 0.15rem 0.15rem #000000;
+}
+
+.titulo_paginas, .quienes_somos_contenedor, .nuestros_clientes_contenedor {
+  color: #df7803;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0.15rem 0.15rem #000000;
+  margin-top: 1rem;
+}
+
+.color_contenedores {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-link:hover {
+  background-color: #ebc82d;
+  color: #000000 !important;
+}
+
+.footer {
+  margin-top: 2rem;
+  height: 6rem;
+  background-color: black !important;
+}
+.footer a img {
+  height: 5rem;
+  width: auto;
+}
+
+.productos {
+  width: 100%;
+}
+.productos img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  text-align: center;
+  border-radius: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.5s;
+}
+.productos img:hover {
+  transform: scale(1.05);
+  transition-delay: 0.1s;
+}
+
+.productos_chipa img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  text-align: center;
+  border-radius: 10%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.5s;
+}
+.productos_chipa img:hover {
+  transform: scale(1.05);
+  transition-delay: 0.1s;
+}
+
+.carousel-inner {
+  margin-top: 30px;
+}
+.carousel-inner img {
+  text-align: center;
+  border-radius: 5%;
+  border: white 3px solid;
+}
+
+.quienes_somos_contenedor, .nuestros_clientes_contenedor {
+  font-family: "Bebas Neue", cursive;
+  width: 50%;
+  text-align: center;
+  font-size: 33.3333333333px;
+  margin-top: 50px;
+  color: black;
+  text-shadow: none;
+}
+
+.bordes {
+  border: blue 1px solid;
+}
+
+.verde {
+  background-color: green;
+  color: white;
+}
+
+.rojo {
+  background-color: red;
+  color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,210 @@
+$amarillo: rgb(235, 200, 45);
+$negro: black;
+$blanco: rgb(255, 255, 255);
+$amarillo2: rgb(223, 120, 3);
+$gris: rgb(224, 215, 215);
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+$unpixel:1;
+
+
+// index y generales colores, y fuentes
+
+
+.header_colores{
+    background-color: black !important;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: end;
+    font-size: 1.3rem ;
+
+    .nav-link{
+        color:white !important;
+    }
+}
+
+
+body{
+    background-color: $amarillo;
+}
+
+.titulo_principal{
+    margin-top: 1rem;
+    color: $negro;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+
+}
+
+.texto_subtitulo{
+    color: $amarillo2;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+
+}
+
+.fondo_contenedorImg{
+    background-color: rgb(255, 255, 255, 0.3);
+
+    img{
+        margin-top: 2rem;
+        border-radius: 10%;
+        transition: transform 0.5s;
+    }
+    img:hover{
+        transform: scale(1.05);
+        transition-delay: 0.1s;
+    }
+}
+
+#ult_foto{
+    margin-bottom: 1rem;
+}
+
+.h4_texto{
+    color: $amarillo2;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.1rem;
+    color: $gris;
+    text-shadow: 0.15rem 0.15rem #000000;
+
+}
+
+.titulo_paginas{
+    color: $amarillo2;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: $blanco;
+    text-shadow: 0.15rem 0.15rem #000000;
+    margin-top: 1rem;
+}
+
+.color_contenedores{
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+
+// header
+
+.nav-link:hover{
+    background-color: $amarillo;
+    color:#000000 !important;
+}
+
+// footer
+
+.footer{
+    margin-top: 2rem;
+    height: 6rem;
+    background-color: black !important;
+
+    a img{
+        height: 5rem;
+        width: auto;
+    }
+}
+
+
+
+// fin index y generales colores y fuentes
+
+
+// productos.html
+
+.productos{width: 100%;
+    img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        text-align: center;
+        border-radius: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: transform 0.5s;
+    }
+    img:hover{
+            transform: scale(1.05);
+            transition-delay: 0.1s;
+    }
+}
+
+.productos_chipa{
+    img{
+
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        text-align: center;
+        border-radius: 10%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        transition: transform 0.5s;
+    }
+    img:hover{
+        transform: scale(1.05);
+        transition-delay: 0.1s;
+    }
+}
+
+// fin nuestrosproductos.html
+
+// galeriadefotos.html
+
+.carousel-inner{
+    margin-top:$unpixel*30px;
+
+
+    img{
+        text-align: center;
+        border-radius: 5%;
+        border: white 3px solid;
+    }
+
+
+}
+// fin galeriadefotos.html
+
+
+// quienessomos.html
+
+.quienes_somos_contenedor{
+    font-family: 'Bebas Neue', cursive;
+    @extend .titulo_paginas;
+    $var1: 100%;
+    width: $var1/2;
+    text-align: center;
+    $fontbig: 50px;
+    font-size: $fontbig/1.5;
+    margin-top: $unpixel*50px;
+    color:$negro;
+    text-shadow: none;
+}
+
+// fin quienessomos.html
+
+
+// nuestrosclientes.html
+
+.nuestros_clientes_contenedor{
+    @extend .quienes_somos_contenedor
+}
+
+
+// fin nuestrosclientes.html
+
+
+// para pruebas
+.bordes{
+    border: blue 1px solid;
+}
+
+.verde{background-color: green; color: white;}
+.rojo{background-color: red; color:white;}
