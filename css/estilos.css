@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: #ebc82d;
+  background-color: #f1d96c;
 }
 
 .titulo_principal {
@@ -76,7 +76,7 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #ebc82d;
+  background-color: #f1d96c;
   color: #000000 !important;
 }
 

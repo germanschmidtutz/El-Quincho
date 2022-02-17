@@ -1,4 +1,4 @@
-$amarillo: rgb(235, 200, 45);
+$amarillo: rgb(241, 217, 108);
 $negro: black;
 $blanco: rgb(255, 255, 255);
 $amarillo2: rgb(223, 135, 3);
@@ -35,6 +35,7 @@ $unpixel:1;
 body{
     background-color: $amarillo;
 }
+
 
 .titulo_principal{
     margin-top: 1rem;
@@ -235,3 +236,4 @@ body{
     flex-direction: row;
     margin-top: 10px;
     }
+
