@@ -230,6 +230,7 @@ body{
     a{
         display: flex;
         justify-content: center;
+        margin: 10px;
     }
     background-color: #000000;
     display: flex;
@@ -237,3 +238,8 @@ body{
     margin-top: 10px;
     }
 
+.alturaFooter{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+}
