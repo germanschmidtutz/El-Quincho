@@ -1,11 +1,15 @@
 $amarillo: rgb(237, 208, 75);
+$amarillo2: rgb(223, 135, 3);
+$amarillo3: rgb(207, 176, 38);
+$amarillo4: rgb(228, 196, 52);
 $negro: black;
 $blanco: rgb(255, 255, 255);
-$amarillo2: rgb(223, 135, 3);
 $gris: rgb(224, 215, 215);
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 *{
     padding: 0;
@@ -17,6 +21,59 @@ $unpixel:1;
 
 
 // index y generales colores, y fuentes
+
+// prueba titulo
+span {
+    display: inline-block;
+    text-shadow: 0 0 0 whitesmoke;
+    animation: smoky 5s 3s both;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.1rem;
+    color: $blanco;
+    justify-content: center;
+  }
+  
+  span:nth-child(even){
+    animation-name: smoky-mirror;
+  }
+  
+  @keyframes smoky {
+    60% {
+      text-shadow: 0 0 40px whitesmoke;
+    }
+    to {
+      transform:
+        translate3d(15rem,-8rem,0)
+        rotate(-40deg)
+        skewX(70deg)
+        scale(1.5);
+      text-shadow: 0 0 20px whitesmoke;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes smoky-mirror {
+    60% {
+      text-shadow: 0 0 40px whitesmoke; }
+    to {
+      transform:
+        translate3d(18rem,-8rem,0)
+        rotate(-40deg) 
+        skewX(-70deg)
+        scale(2);
+       text-shadow: 0 0 20px whitesmoke;
+      opacity: 0;
+    }
+  }
+  
+  @for $item from 1 through 21 {
+    span:nth-of-type(#{$item}){ 
+      animation-delay: #{(3 + ($item/10))}s; 
+    }
+  } 
+
 
 
 .header_colores{
@@ -33,7 +90,7 @@ $unpixel:1;
 
 
 body{
-    background-image: radial-gradient($amarillo, $amarillo2);
+    background-image: linear-gradient($amarillo4, $amarillo2);
 }
 
 
@@ -54,7 +111,7 @@ body{
 }
 
 .fondo_contenedorImg{
-    background-color: rgb(255, 255, 255, 0.3);
+    background-color: $amarillo;
     width: 70%;
     height: 100%;
     border-radius: 1%;
@@ -65,6 +122,7 @@ body{
         border-radius: 10%;
         transition: transform 0.5s;
         height: 50%;
+        margin-bottom: 2rem;
 
     }
     img:hover{
@@ -75,12 +133,12 @@ body{
 
 
 
+
 #ult_foto{
     margin-bottom: 2rem;
 }
 
 .h4_texto{
-    color: $amarillo2;
     font-family: 'Bebas Neue', cursive;
     font-size: 2.1rem;
     color: $gris;
