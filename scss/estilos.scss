@@ -23,6 +23,7 @@ $unpixel:1;
 // index y generales colores, y fuentes
 
 // prueba titulo
+.humo{
 span {
     display: inline-block;
     text-shadow: 0 0 0 whitesmoke;
@@ -73,7 +74,7 @@ span {
       animation-delay: #{(3 + ($item/10))}s; 
     }
   } 
-
+}
 
 
 .header_colores{
