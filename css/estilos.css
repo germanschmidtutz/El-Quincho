@@ -19,7 +19,7 @@
 }
 
 body {
-  background-image: linear-gradient(#edd04b, #df8703);
+  background-color: #edd04b;
 }
 
 .titulo_principal {
@@ -34,6 +34,17 @@ body {
   color: #df8703;
   font-family: "Bebas Neue", cursive;
   font-size: 3rem;
+}
+
+.texto_general {
+  font-family: "Bebas Neue", cursive;
+  width: 100%;
+  text-align: center;
+  padding: 5rem;
+  font-size: 33.3333333333px;
+  margin-top: 50px;
+  color: black;
+  text-shadow: none;
 }
 
 .fondo_contenedorImg {
@@ -65,13 +76,14 @@ body {
   text-shadow: 0.15rem 0.15rem #000000;
 }
 
-.titulo_paginas, .quienes_somos_contenedor, .nuestros_clientes_contenedor {
+.titulo_paginas, .quienes_somos_contenedor, .nuestros_clientes_contenedor, .productos_contenedor, .texto_general {
   color: #df8703;
   font-family: "Bebas Neue", cursive;
   font-size: 3rem;
   color: white;
   text-shadow: 0.15rem 0.15rem #000000;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .color_contenedores {
@@ -86,6 +98,7 @@ body {
   display: inline-block;
   text-shadow: 0 0 0 whitesmoke;
   animation: smoky 5s 3s both;
+  animation-fill-mode: initial;
   text-transform: uppercase;
   font-family: "Architects Daughter", cursive;
   font-size: 1.5rem;
@@ -184,18 +197,72 @@ body {
   color: #000000 !important;
 }
 
-.footer {
-  margin-top: 2rem;
-  height: 6rem;
-  background-color: black !important;
+#carouselIndex {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
 }
-.footer a img {
-  height: 5rem;
-  width: auto;
+#carouselIndex img {
+  width: 100% !important;
+  height: auto !important;
+  filter: contrast(130%);
+}
+
+.fotoIndex {
+  border-radius: 10%;
+  width: 60vh;
+  display: block;
+  margin: auto;
+}
+
+.contenedorBotonesIndex {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20vh;
+}
+
+.boton {
+  background-color: black;
+  color: white;
+  height: auto;
+  width: 90%;
+  padding: 10px;
+  font-family: "Bebas Neue", cursive;
+  font-size: xx-large;
+  text-align: center;
+  box-shadow: 8px 8px 0px 0px white;
+  line-height: 12vh;
+  margin-bottom: 5vh;
+  word-wrap: break-word;
+}
+.boton a {
+  text-decoration: none;
+  color: white;
+}
+
+.boton:hover {
+  text-decoration: none;
+  background-color: #e0d7d7;
+  color: black;
+  box-shadow: 8px 8px 0px 0px black;
+  font-size: 38px;
+  line-height: 15vh;
+}
+.boton:hover a {
+  text-decoration: none;
+  color: black;
 }
 
 .productos {
   width: 100%;
+  background-color: #edd04b;
 }
 .productos img {
   width: 100%;
@@ -212,9 +279,11 @@ body {
   transition-delay: 0.1s;
 }
 
+.productos_chipa {
+  background-color: #eed76f;
+}
 .productos_chipa img {
   width: 100%;
-  max-width: 400px;
   height: auto;
   text-align: center;
   border-radius: 10%;
@@ -227,21 +296,15 @@ body {
   transition-delay: 0.1s;
 }
 
-.carousel-inner {
-  margin-top: 30px;
-}
-.carousel-inner img {
+.productos_contenedor {
+  font-family: "Bebas Neue", cursive;
+  width: 100%;
   text-align: center;
-  border-radius: 5%;
-  border: white 3px solid;
-}
-
-.carousel-control-prev-icon {
-  margin-right: 25px;
-}
-
-.carousel-control-next-icon {
-  margin-left: 25px;
+  padding: 5rem;
+  font-size: 2.5rem;
+  color: black;
+  text-shadow: none;
+  background-color: #df8703;
 }
 
 .quienes_somos_contenedor, .nuestros_clientes_contenedor {
@@ -250,23 +313,9 @@ body {
   text-align: center;
   padding: 5rem;
   font-size: 33.3333333333px;
-  margin-top: 50px;
+  margin-top: 2vh;
   color: black;
   text-shadow: none;
-}
-
-.bordes {
-  border: blue 1px solid;
-}
-
-.verde {
-  background-color: green;
-  color: white;
-}
-
-.rojo {
-  background-color: red;
-  color: white;
 }
 
 .contenedorFooter {
@@ -285,6 +334,20 @@ body {
   height: 5rem;
   display: flex;
   justify-content: center;
+}
+
+.contenedorFooter img:hover {
+  transform: scale(1.2);
+}
+
+.contenedorBotones {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=estilos.css.map */

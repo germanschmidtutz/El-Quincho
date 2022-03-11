@@ -1,6 +1,6 @@
 $amarillo: rgb(237, 208, 75);
 $amarillo2: rgb(223, 135, 3);
-$amarillo3: rgb(207, 176, 38);
+$amarillo3: rgb(238, 215, 111);
 $amarillo4: rgb(228, 196, 52);
 $negro: black;
 $blanco: rgb(255, 255, 255);
@@ -23,7 +23,6 @@ $unpixel:1;
 // index y generales colores, y fuentes
 
 
-
 .header_colores{
     background-color: black !important;
     font-family: 'Bebas Neue', cursive;
@@ -38,7 +37,7 @@ $unpixel:1;
 
 
 body{
-    background-image: linear-gradient($amarillo, $amarillo2);
+    background-color: $amarillo;
 }
 
 
@@ -56,6 +55,20 @@ body{
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
 
+}
+
+.texto_general{
+    font-family: 'Bebas Neue', cursive;
+    @extend .titulo_paginas;
+    $var1: 100%;
+    width: $var1;
+    text-align: center;
+    padding: 5rem;
+    $fontbig: 50px;
+    font-size: $fontbig/1.5;
+    margin-top: $unpixel*50px;
+    color:$negro;
+    text-shadow: none;
 }
 
 .fondo_contenedorImg{
@@ -101,6 +114,7 @@ body{
     color: $blanco;
     text-shadow: 0.15rem 0.15rem #000000;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .color_contenedores{
@@ -115,6 +129,7 @@ body{
         display: inline-block;
         text-shadow: 0 0 0 whitesmoke;
         animation: smoky 5s 3s both;
+        animation-fill-mode: initial;
         text-transform: uppercase;
         font-family: 'Architects Daughter', cursive;
         font-size: 1.5rem;
@@ -170,16 +185,83 @@ body{
     color:#000000 !important;
 }
 
-// footer
 
-.footer{
-    margin-top: 2rem;
-    height: 6rem;
-    background-color: black !important;
+// carousel
 
-    a img{
-        height: 5rem;
-        width: auto;
+#carouselIndex{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+
+
+    img{
+        width: 100% !important;
+        height: auto !important;
+        filter: contrast(130%);
+        
+    }
+}
+
+// foto index
+
+.fotoIndex{
+    border-radius: 10%;
+    width: 60vh;
+    display: block;
+    margin: auto;
+}
+
+// contenedor botones index
+
+.contenedorBotonesIndex{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+
+// botones
+
+.boton{
+    background-color: $negro;
+    color: $blanco;
+    height: auto;
+    width:90%;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: xx-large;
+    text-align: center;
+    box-shadow: 8px 8px 0px 0px $blanco;
+    line-height: 12vh;
+    margin-bottom: 5vh;
+    word-wrap: break-word;
+    a{
+        text-decoration: none;
+        color: $blanco;
+
+    }
+    
+}
+
+
+.boton:hover{
+    text-decoration: none;
+    background-color: $gris;
+    color: $negro;
+    box-shadow: 8px 8px 0px 0px $negro;
+    font-size: 38px;
+    line-height: 15vh;
+
+    a{
+        text-decoration: none;
+        color: $negro;
     }
 }
 
@@ -191,6 +273,7 @@ body{
 // productos.html
 
 .productos{width: 100%;
+    background-color: $amarillo;
     img{
         width: 100%;
         max-width: 400px;
@@ -207,11 +290,12 @@ body{
     }
 }
 
+
 .productos_chipa{
+    background-color: $amarillo3;
     img{
 
         width: 100%;
-        max-width: 400px;
         height: auto;
         text-align: center;
         border-radius: 10%;
@@ -225,29 +309,20 @@ body{
     }
 }
 
+.productos_contenedor{
+    font-family: 'Bebas Neue', cursive;
+    @extend .titulo_paginas;
+    width: 100%;
+    text-align: center;
+    padding: 5rem;
+    font-size: 2.5rem;
+    color:$negro;
+    text-shadow: none;
+    background-color: $amarillo2;
+}
+
 // fin nuestrosproductos.html
 
-// galeriadefotos.html
-
-.carousel-inner{
-    margin-top:$unpixel*30px;
-
-
-    img{
-        text-align: center;
-        border-radius: 5%;
-        border: white 3px solid;
-    }
-}
-
-.carousel-control-prev-icon{
-    margin-right: 25px;
-}
-
-.carousel-control-next-icon{
-    margin-left: 25px;
-}
-// fin galeriadefotos.html
 
 
 // quienessomos.html
@@ -261,7 +336,7 @@ body{
     padding: 5rem;
     $fontbig: 50px;
     font-size: $fontbig/1.5;
-    margin-top: $unpixel*50px;
+    margin-top: 2vh;
     color:$negro;
     text-shadow: none;
 }
@@ -279,13 +354,6 @@ body{
 // fin nuestrosclientes.html
 
 
-// para pruebas
-.bordes{
-    border: blue 1px solid;
-}
-
-.verde{background-color: green; color: white;}
-.rojo{background-color: red; color:white;}
 
 .contenedorFooter{
     a{
@@ -303,4 +371,19 @@ body{
     height: 5rem;
     display: flex;
     justify-content: center;
+}
+
+.contenedorFooter img:hover{
+    transform: scale(1.2);
+
+}
+
+.contenedorBotones{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
