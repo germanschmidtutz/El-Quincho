@@ -19,6 +19,11 @@ $gris: rgb(224, 215, 215);
 $unpixel:1;
 
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 
 // index y generales colores, y fuentes
 
@@ -34,6 +39,7 @@ $unpixel:1;
         color:white !important;
     }
 }
+
 
 
 body{
@@ -91,8 +97,6 @@ body{
         transition-delay: 0.1s;
     }
 }
-
-
 
 
 #ult_foto{
@@ -292,7 +296,7 @@ body{
 
 
 .productos_chipa{
-    background-color: $amarillo3;
+    background-color: $amarillo;
     img{
 
         width: 100%;
@@ -387,3 +391,40 @@ body{
     flex-direction:column;
     align-items: center;
 }
+
+
+// recetas
+
+// dimensión fotos receta
+
+.fotosReceta{
+    height: 45vh;
+    width: auto;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.recetaTexto{
+    @extend .quienes_somos_contenedor;
+    font-size: 25px;
+    ol{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 12vh;
+    }
+}
+
+.flecha{
+    height: 15vh;
+    width: auto;
+    position:fixed;
+    right: 3%;
+    top: 80%;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+

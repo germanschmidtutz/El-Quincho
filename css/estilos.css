@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header_colores {
   background-color: black !important;
   font-family: "Bebas Neue", cursive;
@@ -76,7 +80,7 @@ body {
   text-shadow: 0.15rem 0.15rem #000000;
 }
 
-.titulo_paginas, .quienes_somos_contenedor, .nuestros_clientes_contenedor, .productos_contenedor, .texto_general {
+.titulo_paginas, .quienes_somos_contenedor, .recetaTexto, .nuestros_clientes_contenedor, .productos_contenedor, .texto_general {
   color: #df8703;
   font-family: "Bebas Neue", cursive;
   font-size: 3rem;
@@ -280,7 +284,7 @@ body {
 }
 
 .productos_chipa {
-  background-color: #eed76f;
+  background-color: #edd04b;
 }
 .productos_chipa img {
   width: 100%;
@@ -307,7 +311,7 @@ body {
   background-color: #df8703;
 }
 
-.quienes_somos_contenedor, .nuestros_clientes_contenedor {
+.quienes_somos_contenedor, .recetaTexto, .nuestros_clientes_contenedor {
   font-family: "Bebas Neue", cursive;
   width: 100%;
   text-align: center;
@@ -348,6 +352,36 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.fotosReceta {
+  height: 45vh;
+  width: auto;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.recetaTexto {
+  font-size: 25px;
+}
+.recetaTexto ol {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 12vh;
+}
+
+.flecha {
+  height: 15vh;
+  width: auto;
+  position: fixed;
+  right: 3%;
+  top: 80%;
+  z-index: 1;
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=estilos.css.map */
