@@ -17,6 +17,7 @@ html {
   display: flex;
   justify-content: end;
   font-size: 1.3rem;
+  max-width: 100%;
 }
 .header_colores .nav-link {
   color: white !important;
