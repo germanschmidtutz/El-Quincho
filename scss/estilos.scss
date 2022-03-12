@@ -345,6 +345,17 @@ body{
     text-shadow: none;
 }
 
+.contenedorFotosQuienesSomos{
+    display: flex;
+    justify-content: center;
+
+}
+.fotosQuienesSomos{
+    height: 100vh;
+    width: auto;
+    border-radius: 10%;
+}
+
 // fin quienessomos.html
 
 
@@ -354,8 +365,6 @@ body{
     @extend .quienes_somos_contenedor
 }
 
-
-// fin nuestrosclientes.html
 
 
 
@@ -427,4 +436,70 @@ body{
     z-index: 1;
     scroll-behavior: smooth;
 }
+
+
+// contacto.html
+
+.contenedorFormulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    label{
+        @extend .titulo_paginas;
+        font-size: 8vh;
+    }
+
+    input{
+        background-color: $negro;
+        color:$amarillo;
+        height: 8vh;
+    }
+    
+    ::placeholder{
+        color: $amarillo;
+    }
+
+    .botonFormulario{
+        margin-top: 10vh;
+        color:$blanco;
+        height: 10vh;
+        width: 30vh;
+
+    }
+    margin-bottom: 5vh;
+}
+
+
+.textoFormulario{
+    @extend .quienes_somos_contenedor;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    padding: 0px;
+}
+
+.contenedorFlecha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.flechaFormulario{
+    transform: rotate(180deg);
+    width: 15vh;
+    height: auto;
+}
+
+
+// fin contacto.html
 
