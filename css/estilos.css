@@ -70,6 +70,10 @@ body {
   transition-delay: 0.1s;
 }
 
+.navbar {
+  text-align: end;
+}
+
 #ult_foto {
   margin-bottom: 2rem;
 }
