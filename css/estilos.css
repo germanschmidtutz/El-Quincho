@@ -216,13 +216,6 @@ body {
   filter: contrast(130%);
 }
 
-.fotoIndex {
-  border-radius: 10%;
-  width: 300px;
-  display: block;
-  margin: auto;
-}
-
 .contenedorBotonesIndex {
   width: 100%;
   height: 100vh;
@@ -387,10 +380,10 @@ body {
 }
 
 .flecha {
-  height: 15vh;
+  height: 10vh;
   width: auto;
   position: fixed;
-  right: 3%;
+  right: 5%;
   top: 80%;
   z-index: 1;
   scroll-behavior: smooth;
