@@ -326,9 +326,12 @@ body {
 }
 
 .fotosQuienesSomos {
-  height: 100vh;
-  width: auto;
-  border-radius: 10%;
+  transition: transform 0.5s;
+}
+
+.fotosQuienesSomos:hover {
+  transform: scale(1.05);
+  transition-delay: 0.1s;
 }
 
 .contenedorFooter {
@@ -364,12 +367,12 @@ body {
 }
 
 .fotosReceta {
-  height: 45vh;
-  width: auto;
-  border-radius: 10%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5vh;
+  transition: transform 0.5s;
+}
+
+.fotosReceta:hover {
+  transform: scale(1.05);
+  transition-delay: 0.1s;
 }
 
 .recetaTexto {
